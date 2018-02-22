@@ -8,7 +8,10 @@ my $TARCMD = "/bin/tar czf";
 #-------------------
 # No changes below here...
 #-------------------
+my $VERSION = "1.0";
 
+print "CitBackup.pl version $VERSION\n";
+print "========================\n";
 if (! -d $BACKUPDIR)
 {
 	print "Backup dir $BACKUPDIR not found, creating...\n";
@@ -36,7 +39,7 @@ if (-f "$BACKUPDIR/citbackup-1.tgz")
 {
 	rename("$BACKUPDIR/citbackup-1.tgz", "$BACKUPDIR/citbackup-2.tgz");
 }
-print "Done\nCreating Backup: ";
+print "Done\nCreating New Backup: ";
 system("$TARCMD $BACKUPDIR/citbackup-1.tgz $CITDIR");
 print("\nCulling the log files\n");
 system("$CITDIR/sendcommand \"CULL\"");
