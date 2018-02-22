@@ -1,7 +1,7 @@
 # CitBackup backup script for Citadel groupware (1.0)
 Creates a hot backup of your Citadel groupware installation. Run this daily or your logs could get huge.
 
-Official support sites: [Official Github Repo](https://github.com/fstltna/CitBackup) - [Official Forum](https://synchronetbbs.org/index.php/forum/citbackup) 
+Official support sites: [Official Github Repo](https://github.com/fstltna/CitBackup) - [Official Forum](https://synchronetbbs.org/index.php/forum/citbackup) - [Official Download Site](https://synchronetbbs.org/index.php/downloads/category/9-groupware) 
 
 ---
 Make sure you have the "Settings->Automatically delete committed database logs" option disabled!
