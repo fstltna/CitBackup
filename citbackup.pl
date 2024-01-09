@@ -1,7 +1,7 @@
 #!/usr/bin/perl
 
 # Set these for your situation
-my $CITDIR = "/usr/local/citadel/data/cdb.* /usr/local/citadel/data/log.*";
+my $CITDIR = "/usr/local/citadel /usr/local/citadel/data/cdb.* /usr/local/citadel/data/log.*";
 my $BACKUPDIR = "/root/backups";
 my $TARCMD = "/bin/tar czf";
 
