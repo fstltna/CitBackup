@@ -1,14 +1,14 @@
 #!/usr/bin/perl
 
 # Set these for your situation
-my $CITDIR = "/usr/local/citadel";
+my $CITDIR = "/usr/local/citadel/data/cdb.* /usr/local/citadel/data/log.*";
 my $BACKUPDIR = "/root/backups";
 my $TARCMD = "/bin/tar czf";
 
 #-------------------
 # No changes below here...
 #-------------------
-my $VERSION = "1.0";
+my $VERSION = "1.1";
 
 print "CitBackup.pl version $VERSION\n";
 print "========================\n";
