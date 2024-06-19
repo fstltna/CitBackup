@@ -2,13 +2,14 @@
 
 # Set these for your situation
 my $CITDIR = "/usr/local/citadel /usr/local/citadel/data/cdb.* /usr/local/citadel/data/log.*";
+my $SENDCOMMAND = "/usr/local/citadel/sendcommand";
 my $BACKUPDIR = "/root/backups";
 my $TARCMD = "/bin/tar czf";
 
 #-------------------
 # No changes below here...
 #-------------------
-my $VERSION = "1.1";
+my $VERSION = "1.2";
 
 print "CitBackup.pl version $VERSION\n";
 print "========================\n";
@@ -42,6 +43,6 @@ if (-f "$BACKUPDIR/citbackup-1.tgz")
 print "Done\nCreating New Backup: ";
 system("$TARCMD $BACKUPDIR/citbackup-1.tgz $CITDIR");
 print("\nCulling the log files\n");
-system("$CITDIR/sendcommand \"CULL\"");
+system("$SENDCOMMAND \"CULL\"");
 print("Done!\n");
 exit 0;
