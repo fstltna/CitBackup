@@ -9,7 +9,7 @@ my $TARCMD = "/bin/tar czf";
 #-------------------
 # No changes below here...
 #-------------------
-my $VERSION = "1.2";
+my $VERSION = "1.3";
 
 print "CitBackup.pl version $VERSION\n";
 print "========================\n";
